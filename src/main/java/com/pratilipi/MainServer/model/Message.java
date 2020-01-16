@@ -9,7 +9,7 @@ public class Message {
     private String from_user;
     private String to_user;
     private String text;
-    @JsonFormat(pattern="dd-MM-yyyy")
+    @JsonFormat(pattern="dd-MM-yyyy HH:mm:SS")
     private LocalDateTime timeStamp;
 
     public String getId() {
