@@ -14,14 +14,14 @@ import org.springframework.context.annotation.Configuration;
 //        (basePackages = "com.pratilipi.MainServer.repository")
 public class DynamoDBConfig {
 
-    @Value("${amazon.dynamodb.endpoint}")
-    private String amazonDynamoDBEndpoint;
-
-    @Value("${amazon.aws.accesskey}")
-    private String amazonAWSAccessKey;
-
-    @Value("${amazon.aws.secretkey}")
-    private String amazonAWSSecretKey;
+//    @Value("${amazon.dynamodb.endpoint}")
+//    private String amazonDynamoDBEndpoint;
+//
+//    @Value("${amazon.aws.accesskey}")
+//    private String amazonAWSAccessKey;
+//
+//    @Value("${amazon.aws.secretkey}")
+//    private String amazonAWSSecretKey;
 
     @Bean
     public AmazonDynamoDB amazonDynamoDB() {

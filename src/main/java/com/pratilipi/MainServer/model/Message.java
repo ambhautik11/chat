@@ -1,5 +1,7 @@
 package com.pratilipi.MainServer.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 public class Message {
 
@@ -7,6 +9,7 @@ public class Message {
     private String from_user;
     private String to_user;
     private String text;
+    @JsonFormat(pattern="dd-MM-yyyy")
     private LocalDateTime timeStamp;
 
     public String getId() {
